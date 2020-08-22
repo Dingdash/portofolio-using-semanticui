@@ -4,16 +4,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 <style>
 
 </style>
 
 <body>
-    <div style="margin-top:10px;" class="ui grid stackable container">
+    <div style="margin-top:10px; padding:10px;" class="ui grid container">
 
         <div class="eleven wide column">
+            <div class="ui segment">
+                <h1 class="ui center aligned header">David Setiokusumo</h1>
+                <img class="ui small circular centered image" style="max-height: 300px;" src="pp.png">
+                <br>
+                <p class="content" style="text-align: justify;">
+                    <b> Personal Profile - </b>
+                    I am ambitous and determine person who like to doing stuffs with computer. As a graduate in Software
+                    Engineering, I also have experience in manage a project that i had before. I am eager to learn new
+                    things, I enjoy music and overcoming obstacles, and I have genuine interest in Software Engineering
+                    (System Analyst)
+                    and making software keep maintained well.
+                </p>
+            </div>
             <div class="ui segment">
                 <h1 class="ui center aligned header">Education</h1>
                 <div class="ui items">
@@ -26,9 +39,9 @@
                             </div>
                             <div class="meta">
                                 <span>
-                                    <a href="https://istts.ac.id">Institute Sains dan Teknologi Terpadu Surabaya</a>
+                                    <a href="https://istts.ac.id">Institut Sains dan Teknologi Terpadu Surabaya</a>
                                     <div class="ui right floated">
-                                        Aug 2015- May 2020
+                                        Aug 2015-May 2020
                                     </div>
                                 </span>
                             </div>
@@ -75,7 +88,7 @@
                                 <span><a href="https://github.com/Dingdash/DeckApps">App about documentation of a card
                                         deck </a></span>
                                 <span>
-                                    <p><a href="https://github.com/Dingdash/precious">A shopping cart app</a></p>
+                                    <p><a href="https://github.com/Dingdash/precious">An Ecommerce app</a></p>
                                 </span>
                                 <div class="ui right floated">
 
@@ -175,6 +188,9 @@
                         <div class="twelve wide column">
                             <div class="row">
                                 David Setiokusumo
+                            </div>
+                            <div class="row">
+                                Rungkut, Surabaya
                             </div>
                         </div>
 
@@ -386,9 +402,14 @@
         </div>
     </div>
     </div>
+    <button class="tes">save</button>
 </body>
 <script>
+
     $('.ui.progress').progress();
+    html2canvas(document.querySelector(".container")).then(canvas => {
+        document.body.appendChild(canvas)
+    });
 </script>
 
 </html>
